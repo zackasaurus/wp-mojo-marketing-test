@@ -1,65 +1,61 @@
 header {
-    width: 100%;
-    min-height: 50rem;
-    background-image: url('images/hero_image.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-top: 2.5rem;
+  width: 100%;
+  min-height: 50rem;
+  background-image: url('images/hero_image.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 2.5rem;
 
+  nav {
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+    margin: 0 5%;
+  }
 
-    nav {
-        display: flex;
-        justify-content: space-between;
-        // background: blue;
-        height: 10rem;
-        margin: 0 5%;
-    }
+  #logo {
+    // width: 1rem;
+    height: 100%;
+  }
 
-    #logo {
-        // width: 1rem;
-        height: 100%;
+  #navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 75%;
+    width: 75%;
+  }
 
+  .navbar__top {
+    width: 60%;
+    // background: green;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+  }
 
-    }
+  .navbar__bottom {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
 
-    #navbar {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-end;
-        flex-direction: column;
-        height: 75%;
-        width: 75%;
-    }
+  a {
+    font-family: 'quicksand';
+    // color: white;
+    color: white;
+    text-decoration: none;
+  }
 
-    .navbar__top {
-        width: 60%;
-        // background: green;
-        display: flex;
-        justify-content: space-between;
-        font-size: 1.2rem;
-    }
-
-    .navbar__bottom {
-        width: 50%;
-        display: flex;
-        justify-content: space-between;
-        font-size: 2rem;
-        text-transform: uppercase;
-        font-weight: 500;
-    }
-
-    a {
-        font-family: 'quicksand';
-        // color: white;
-        color: white;
-        text-decoration: none;
-    }
-
-    .hero__text {
-        color: white;
-        margin-top: 10rem;
-        margin-left: 15%;
-        font-size: 2rem;
-    }
+  .hero__text {
+    color: white;
+    margin-top: 10rem;
+    margin-left: 15%;
+    font-size: 2rem;
+  }
 }

@@ -12,7 +12,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Quicksand"; }
+  font-family: "Roboto";
+  -webkit-font-smoothing: antialiased; }
 
 header {
   width: 100%;
@@ -59,7 +60,6 @@ header {
     font-size: 2rem; }
 
 #about {
-  height: 22.5rem;
   font-size: 1.5rem;
   margin: 3rem 15%;
   text-align: center; }
@@ -69,13 +69,76 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 3rem 15%; }
+  background: #dddddd;
+  margin: 3.5rem 0%;
+  padding: 3.5rem 15%; }
+  .headline-one h2 {
+    color: #5f7ea2;
+    font-family: 'Merriweather';
+    font-weight: 300;
+    font-size: 3rem;
+    margin-bottom: 3.5rem; }
+  .headline-one p {
+    margin-bottom: 3.5rem; }
   .headline-one .toggle-menu {
     display: flex;
-    flex-basis: column;
-    height: 15rem;
-    background: lightgrey;
-    width: 100%; }
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 3.5rem; }
   .headline-one .toggle-menu__nav {
     display: flex;
     justify-content: space-around; }
+  .headline-one .tab-container {
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+    color: #042347;
+    background: #dddddd;
+    cursor: pointer; }
+    .headline-one .tab-container--active {
+      background: white; }
+  .headline-one .toggle-menu__content {
+    display: none; }
+  .headline-one .toggle-menu__content--active {
+    padding: 5rem;
+    background: white;
+    display: flex;
+    align-items: flex-start; }
+  .headline-one .left-icon {
+    width: 25%; }
+  .headline-one .left-icon > img {
+    display: block;
+    width: 50%;
+    margin: auto; }
+  .headline-one .right-content {
+    width: 75%; }
+  .headline-one h3 {
+    color: #042347;
+    font-size: 2.5rem; }
+  .headline-one button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto;
+    margin-bottom: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    background: #042347;
+    transition: all .2s ease;
+    cursor: pointer;
+    z-index: 1; }
+    .headline-one button a {
+      min-width: 25rem;
+      display: block;
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white; }

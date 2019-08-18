@@ -1,23 +1,113 @@
 .headline-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $color-light-gray;
+  margin: 3.5rem 0%;
+  padding: 3.5rem 15%;
+
+  h2 {
+    color: $color-light-blue;
+    font-family: 'Merriweather';
+    font-weight: 300;
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+  }
+
+  p {
+    margin-bottom: 3.5rem;
+    // padding: 3rem 0;
+  }
+
+  .toggle-menu {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 100%;
+    margin-bottom: 3.5rem;
+  }
+
+  .toggle-menu__nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .tab-container {
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
     justify-content: center;
-    // width: 85%;
-    // background: green;
-    margin: 3rem 15%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+    color: $color-dark-blue;
+    background: $color-light-gray;
+    cursor: pointer;
 
-    .toggle-menu {
-        display: flex;
-        flex-basis: column;
-        height: 15rem;
-        background: lightgrey;
-        width: 100%;
+    &--active {
+      background: white;
     }
+  }
 
-    .toggle-menu__nav {
-        display: flex;
-        justify-content: space-around;
+  .toggle-menu__content {
+    display: none;
+    // padding: 10rem;
+    // background: white;
+    // display: flex;
+  }
+
+  .toggle-menu__content--active {
+    padding: 5rem;
+    background: white;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .left-icon {
+    width: 25%;
+  }
+
+  .left-icon>img {
+    display: block;
+    width: 50%;
+    margin: auto;
+
+  }
+
+  .right-content {
+    width: 75%;
+  }
+
+  h3 {
+    color: $color-dark-blue;
+    font-size: 2.5rem;
+  }
+
+  button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto;
+    margin-bottom: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    background: $color-dark-blue;
+    transition: all .2s ease;
+    cursor: pointer;
+    z-index: 1;
+
+    a {
+      min-width: 25rem;
+      display: block;
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
     }
+  }
 
 }

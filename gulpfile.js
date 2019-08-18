@@ -11,7 +11,7 @@ const style = () => {
       // 2. pass file through compiler
       .pipe(sass())
       // 3. save css file
-      .pipe(gulp.dest('./css'))
+      .pipe(gulp.dest('./'))
       // 4. stream changes to all browser
       .pipe(browserSync.stream())
   );
@@ -19,8 +19,9 @@ const style = () => {
 
 const watch = () => {
   browserSync.init({
-    proxy: 'http://mojo.local/'
+    proxy: 'http://mojo.test/'
   });
+  gulp.watch('./js').on('change', browserSync.reload);
   gulp.watch('./scss/**/*.scss', style).on('change', browserSync.reload);
   gulp.watch('./*.php').on('change', browserSync.reload);
 };
