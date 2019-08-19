@@ -1,9 +1,12 @@
 #about {
-    // height: 22.5rem;
-    // display: flex;
-    // // justify-content: space-evenly;
-    // // flex-direction: column;
-    font-size: 1.5rem;
-    margin: 3rem 15%;
-    text-align: center;
+  // height: 22.5rem;
+  // display: flex;
+  // // justify-content: space-evenly;
+  // // flex-direction: column;
+  color: $color-dark-gray;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin: 3rem 15%;
+  text-align: center;
 }

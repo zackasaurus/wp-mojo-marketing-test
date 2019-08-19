@@ -1,0 +1,35 @@
+.column-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 15%;
+
+    .headline-four,
+    .headline-five {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+        padding: $py1 0%;
+    }
+
+    h2 {
+        color: $color-light-blue;
+        font-family: 'Merriweather';
+        font-weight: 300;
+        font-size: $fs1;
+        margin-bottom: $py1;
+        text-decoration: none;
+    }
+
+    p {
+        color: $color-dark-gray;
+        font-weight: 300;
+        font-size: 1.5rem;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+
+}

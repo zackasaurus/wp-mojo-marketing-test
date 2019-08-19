@@ -54,13 +54,17 @@ header {
     color: white;
     text-decoration: none; }
   header .hero__text {
+    font-family: 'Merriweather';
     color: white;
     margin-top: 10rem;
     margin-left: 15%;
     font-size: 2rem; }
 
 #about {
+  color: #020202;
+  font-weight: 300;
   font-size: 1.5rem;
+  line-height: 1.4;
   margin: 3rem 15%;
   text-align: center; }
 
@@ -76,10 +80,15 @@ header {
     color: #5f7ea2;
     font-family: 'Merriweather';
     font-weight: 300;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 3.5rem; }
   .headline-one p {
-    margin-bottom: 3.5rem; }
+    color: #020202;
+    font-weight: 300;
+    margin-bottom: 3.5rem;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: center; }
   .headline-one .toggle-menu {
     display: flex;
     flex-direction: column;
@@ -98,9 +107,11 @@ header {
     font-style: normal;
     color: #042347;
     background: #dddddd;
+    transition: .3s ease all;
     cursor: pointer; }
     .headline-one .tab-container--active {
-      background: white; }
+      background: white;
+      transition: .3s ease all; }
   .headline-one .toggle-menu__content {
     display: none; }
   .headline-one .toggle-menu__content--active {
@@ -116,9 +127,14 @@ header {
     margin: auto; }
   .headline-one .right-content {
     width: 75%; }
+    .headline-one .right-content p {
+      font-size: 1.5rem;
+      line-height: 1.4;
+      text-align: left; }
   .headline-one h3 {
     color: #042347;
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    margin-bottom: 1rem; }
   .headline-one button {
     position: relative;
     display: flex;
@@ -142,3 +158,73 @@ header {
       text-decoration: none;
       text-transform: uppercase;
       color: white; }
+
+.headline-three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #dddddd;
+  padding: 3rem 15%; }
+  .headline-three h2 {
+    color: #5f7ea2;
+    font-family: 'Merriweather';
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-bottom: 3rem; }
+  .headline-three p {
+    color: #020202;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: center; }
+  .headline-three button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    background: #042347;
+    transition: all .2s ease;
+    cursor: pointer;
+    z-index: 1; }
+    .headline-three button a {
+      min-width: 25rem;
+      display: block;
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white; }
+
+.column-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 15%; }
+  .column-2 .headline-four,
+  .column-2 .headline-five {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    padding: 3rem 0%; }
+  .column-2 h2 {
+    color: #5f7ea2;
+    font-family: 'Merriweather';
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-decoration: none; }
+  .column-2 p {
+    color: #020202;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: center; }

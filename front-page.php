@@ -4,14 +4,6 @@
 <?php $about = get_field('about')?>
 <section id="about">
     <?php echo $about['text']?>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae nesciunt excepturi ducimus sunt mollitia in? Commodi
-    ipsam alias distinctio eum facere architecto officiis recusandae, quos voluptatum expedita suscipit magni, adipisci
-    at velit et ratione fugit sunt culpa ex aut? Pariatur?
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae accusamus vero itaque? Tenetur recusandae
-    corporis vitae quae eius! Accusamus laborum rem numquam suscipit repellat? Assumenda explicabo quis optio numquam
-    eos sequi earum recusandae, enim, porro autem excepturi, a voluptatibus tempore!
-
-    Test
 </section>
 
 <?php $headline_one = get_field('headline_one') ?>
@@ -56,6 +48,7 @@
             <?php endif; ?>
 
         </div>
+
         <!-- Content -->
         <?php if (have_rows('toggle_menu')): $counter = 0;?>
         <?php while (have_rows('toggle_menu')): the_row(); ?>
@@ -67,9 +60,6 @@
         <?php if ($counter == 0):?>
         <div class="toggle-menu__content toggle-menu__content--active">
             <div class="left-icon">
-                <!-- <img  src="/images/meter.svg"
-                alt=""> -->
-
                 <?php if (!empty($icon)): ?>
 
 
@@ -122,6 +112,62 @@
         <a href="#">Something here</a>
     </button>
 </section>
+<!-- Headline 3 -->
+<?php $headline_three = get_field('headline_three') ?>
+<?php $icon = $headline_three['icon'] ?>
 
+<section class="headline-three">
+
+    <?php if (!empty($icon)): ?>
+    <img src="<?php echo $icon['url']; ?>"
+        alt="<?php echo $icon['alt']; ?>" />
+    <?php endif; ?>
+
+    <h2>Headline Three</h2>
+    <p>
+        <?php echo $headline_three['blurb']?>
+    </p>
+    <button>
+        <a href="#">
+            <?php echo $headline_three['button']?>
+        </a>
+    </button>
+</section>
+
+<?php $headline_four = get_field('headline_four') ?>
+<?php $icon = $headline_three['icon'] ?>
+
+<!-- Headline 4 & 5 -->
+<div class="column-2">
+    <section class="headline-four">
+
+        <?php if (!empty($icon)): ?>
+        <img src="<?php echo $icon['url']; ?>"
+            alt="<?php echo $icon['alt']; ?>" />
+        <?php endif; ?>
+
+        <h2>
+            <?php echo $headline_four['title']?>
+        </h2>
+        <p>
+            <?php echo $headline_four['content']?>
+        </p>
+
+    </section>
+    <section class="headline-five">
+
+        <?php if (!empty($icon)): ?>
+        <img src="<?php echo $icon['url']; ?>"
+            alt="<?php echo $icon['alt']; ?>" />
+        <?php endif; ?>
+
+        <h2>Headline Five</h2>
+        <p>
+            <?php echo $headline_three['blurb']?>
+        </p>
+
+    </section>
+
+</div>
 
 <?php get_footer();

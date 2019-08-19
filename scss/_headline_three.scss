@@ -1,0 +1,51 @@
+.headline-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $color-light-gray;
+    padding: $py1 15%;
+
+    h2 {
+        color: $color-light-blue;
+        font-family: 'Merriweather';
+        font-weight: 300;
+        font-size: $fs1;
+        margin-bottom: $py1;
+    }
+
+    p {
+        color: $color-dark-gray;
+        font-weight: 300;
+        margin-bottom: $py1;
+        font-size: 1.5rem;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    button {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem auto;
+        outline: none;
+        border: none;
+        border-radius: 20px;
+        text-decoration: none;
+        background: $color-dark-blue;
+        transition: all .2s ease;
+        cursor: pointer;
+        z-index: 1;
+
+        a {
+            min-width: 25rem;
+            display: block;
+            padding: 1rem 1.5rem;
+            font-size: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+}

@@ -11,13 +11,18 @@
     color: $color-light-blue;
     font-family: 'Merriweather';
     font-weight: 300;
-    font-size: 3rem;
+    font-size: $fs1;
     margin-bottom: 3.5rem;
   }
 
   p {
+    color: $color-dark-gray;
+    font-weight: 300;
     margin-bottom: 3.5rem;
-    // padding: 3rem 0;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: center;
+
   }
 
   .toggle-menu {
@@ -42,10 +47,14 @@
     font-style: normal;
     color: $color-dark-blue;
     background: $color-light-gray;
+    transition: .3s ease all;
+
     cursor: pointer;
+
 
     &--active {
       background: white;
+      transition: .3s ease all;
     }
   }
 
@@ -54,6 +63,7 @@
     // padding: 10rem;
     // background: white;
     // display: flex;
+
   }
 
   .toggle-menu__content--active {
@@ -61,6 +71,7 @@
     background: white;
     display: flex;
     align-items: flex-start;
+
   }
 
   .left-icon {
@@ -76,12 +87,22 @@
 
   .right-content {
     width: 75%;
+
+    p {
+      font-size: 1.5rem;
+      line-height: 1.4;
+      text-align: left;
+    }
   }
 
   h3 {
     color: $color-dark-blue;
     font-size: 2.5rem;
+    margin-bottom: 1rem;
   }
+
+
+
 
   button {
     position: relative;
