@@ -1,5 +1,6 @@
 <footer>
-    test
+    <div class=""></div>
+    
 </footer>
 
 <?php wp_footer();?>

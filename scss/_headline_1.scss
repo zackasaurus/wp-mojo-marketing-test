@@ -4,21 +4,23 @@
   align-items: center;
   justify-content: center;
   background: $color-light-gray;
-  margin: 3.5rem 0%;
-  padding: 3.5rem 15%;
+  // margin: 3.5rem 0%;
+  padding: $py0 15%;
+
+
 
   h2 {
     color: $color-light-blue;
     font-family: 'Merriweather';
     font-weight: 300;
     font-size: $fs1;
-    margin-bottom: 3.5rem;
+    margin-bottom: $py1;
   }
 
   p {
     color: $color-dark-gray;
     font-weight: 300;
-    margin-bottom: 3.5rem;
+    margin-bottom: $py1;
     font-size: 1.5rem;
     line-height: 1.4;
     text-align: center;
@@ -80,8 +82,11 @@
 
   .left-icon>img {
     display: block;
-    width: 50%;
+    max-height: 75px;
+    max-width: 75px;
     margin: auto;
+    filter: brightness(0) saturate(100%) invert(14%) sepia(18%) saturate(3544%) hue-rotate(180deg) brightness(92%) contrast(104%);
+
 
   }
 
@@ -110,7 +115,6 @@
     justify-content: center;
     align-items: center;
     margin: 0rem auto;
-    margin-bottom: 2rem;
     outline: none;
     border: none;
     border-radius: 20px;
@@ -121,9 +125,9 @@
     z-index: 1;
 
     a {
-      min-width: 25rem;
+      min-width: 30rem;
       display: block;
-      padding: 1rem 1.5rem;
+      padding: 1.25rem 1.5rem;
       font-size: 1rem;
       text-decoration: none;
       text-transform: uppercase;

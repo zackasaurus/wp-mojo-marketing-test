@@ -4,7 +4,13 @@
     align-items: center;
     justify-content: center;
     background: $color-light-gray;
-    padding: $py1 15%;
+    padding: $py0 15%;
+
+    img {
+        height: 50px;
+        margin-bottom: $py1;
+        filter: brightness(0) saturate(100%) invert(14%) sepia(18%) saturate(3544%) hue-rotate(180deg) brightness(92%) contrast(104%);
+    }
 
     h2 {
         color: $color-light-blue;
@@ -39,9 +45,9 @@
         z-index: 1;
 
         a {
-            min-width: 25rem;
+            min-width: 30rem;
             display: block;
-            padding: 1rem 1.5rem;
+            padding: 1.25rem 1.5rem;
             font-size: 1rem;
             text-decoration: none;
             text-transform: uppercase;

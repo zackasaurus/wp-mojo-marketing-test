@@ -3,6 +3,7 @@ Theme Name: Mojo Theme
 Author: Zachary Bogard
 Version: 1.0
 */
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,700&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -38,12 +39,12 @@ header {
     height: 75%;
     width: 75%; }
   header .navbar__top {
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     font-size: 1.2rem; }
   header .navbar__bottom {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
     font-size: 2rem;
@@ -54,7 +55,8 @@ header {
     color: white;
     text-decoration: none; }
   header .hero__text {
-    font-family: 'Merriweather';
+    font-family: sans-serif;
+    font-weight: thin;
     color: white;
     margin-top: 10rem;
     margin-left: 15%;
@@ -65,7 +67,7 @@ header {
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 1.4;
-  margin: 3rem 15%;
+  margin: 5rem 15%;
   text-align: center; }
 
 .headline-one {
@@ -74,18 +76,17 @@ header {
   align-items: center;
   justify-content: center;
   background: #dddddd;
-  margin: 3.5rem 0%;
-  padding: 3.5rem 15%; }
+  padding: 5rem 15%; }
   .headline-one h2 {
     color: #5f7ea2;
     font-family: 'Merriweather';
     font-weight: 300;
     font-size: 2.5rem;
-    margin-bottom: 3.5rem; }
+    margin-bottom: 3rem; }
   .headline-one p {
     color: #020202;
     font-weight: 300;
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
     font-size: 1.5rem;
     line-height: 1.4;
     text-align: center; }
@@ -123,8 +124,10 @@ header {
     width: 25%; }
   .headline-one .left-icon > img {
     display: block;
-    width: 50%;
-    margin: auto; }
+    max-height: 75px;
+    max-width: 75px;
+    margin: auto;
+    filter: brightness(0) saturate(100%) invert(14%) sepia(18%) saturate(3544%) hue-rotate(180deg) brightness(92%) contrast(104%); }
   .headline-one .right-content {
     width: 75%; }
     .headline-one .right-content p {
@@ -141,7 +144,6 @@ header {
     justify-content: center;
     align-items: center;
     margin: 0rem auto;
-    margin-bottom: 2rem;
     outline: none;
     border: none;
     border-radius: 20px;
@@ -151,13 +153,16 @@ header {
     cursor: pointer;
     z-index: 1; }
     .headline-one button a {
-      min-width: 25rem;
+      min-width: 30rem;
       display: block;
-      padding: 1rem 1.5rem;
+      padding: 1.25rem 1.5rem;
       font-size: 1rem;
       text-decoration: none;
       text-transform: uppercase;
       color: white; }
+
+.headline-two {
+  height: 5rem; }
 
 .headline-three {
   display: flex;
@@ -165,7 +170,11 @@ header {
   align-items: center;
   justify-content: center;
   background: #dddddd;
-  padding: 3rem 15%; }
+  padding: 5rem 15%; }
+  .headline-three img {
+    height: 50px;
+    margin-bottom: 3rem;
+    filter: brightness(0) saturate(100%) invert(14%) sepia(18%) saturate(3544%) hue-rotate(180deg) brightness(92%) contrast(104%); }
   .headline-three h2 {
     color: #5f7ea2;
     font-family: 'Merriweather';
@@ -194,9 +203,9 @@ header {
     cursor: pointer;
     z-index: 1; }
     .headline-three button a {
-      min-width: 25rem;
+      min-width: 30rem;
       display: block;
-      padding: 1rem 1.5rem;
+      padding: 1.25rem 1.5rem;
       font-size: 1rem;
       text-decoration: none;
       text-transform: uppercase;
@@ -213,8 +222,13 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 45%;
-    padding: 3rem 0%; }
+    width: 47.5%;
+    padding: 5rem 0%; }
+    .column-2 .headline-four img,
+    .column-2 .headline-five img {
+      height: 50px;
+      margin-bottom: 3rem;
+      filter: brightness(0) saturate(100%) invert(14%) sepia(18%) saturate(3544%) hue-rotate(180deg) brightness(92%) contrast(104%); }
   .column-2 h2 {
     color: #5f7ea2;
     font-family: 'Merriweather';

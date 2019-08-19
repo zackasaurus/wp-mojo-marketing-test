@@ -6,7 +6,8 @@ function load_stylesheets()
     wp_enqueue_style('index');
     wp_enqueue_style('Quicksand', '//fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap');
     wp_enqueue_style('Roboto', '//fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap');
-    wp_enqueue_style('Merriweather', '//fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&display=swap');
+    // wp_enqueue_style('Merriweather300', '//fonts.googleapis.com/css?family=Merriweather:300&display=swap');
+    // wp_enqueue_style('Merriweather500', '//fonts.googleapis.com/css?family=Merriweather:500&display=swap');
 }
 function addjs()
 {

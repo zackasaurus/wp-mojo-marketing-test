@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mojo Developer Test</title>
-
+    <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700&display=swap" rel="stylesheet">
+ -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700&display=swap');
+    </style>
     <?php wp_head();?>
 
 
